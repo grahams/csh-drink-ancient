@@ -1,0 +1,711 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\drink.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\drink.ico"
+IDR_DRINKTYPE           ICON    DISCARDABLE     "res\\drinkDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       ID_FILE_OPEN
+        MENUITEM "&Close",                      Drink_Close, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Log &In\tCtrl+I",             Grey_Login
+        MENUITEM "Log O&ut\tCtrl+O",            Grey_Logout, GRAYED
+        MENUITEM "Log Out &All\tCtrl+A",        Grey_Logout_All, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl+X",               ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Options",                    Grey_Options, GRAYED
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About drink...",             ID_APP_ABOUT
+    END
+END
+
+IDR_DRINKTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Log &In\tCtrl+I",             Drink_Login
+        MENUITEM "Log O&ut\tCtrl+O",            Drink_Logout
+        MENUITEM "Log Out &All\tCtrl+A",        Drink_Logout_All
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl+X",               ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Options",                    Drink_Options
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About drink...",             ID_APP_ABOUT
+    END
+END
+
+IDR_DRINKTYPE_CNTR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_APP_EXIT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_DRINKTYPE_CNTR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            Drink_Logout_All,       VIRTKEY, CONTROL, NOINVERT
+    "I",            Drink_Login,            VIRTKEY, CONTROL, NOINVERT
+    "O",            Drink_Logout,           VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_APP_EXIT,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About drink"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "drink Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999",IDC_STATIC,40,40,60,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "Eric Schumann",IDC_STATIC,40,25,50,8
+    LTEXT           "Computer Science House",IDC_STATIC,100,40,80,8
+END
+
+Drink_Login_Dialog DIALOG DISCARDABLE  0, 0, 194, 97
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Login"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Login",Drink_LoginOK,135,20,50,14
+    PUSHBUTTON      "Cancel",Drink_LoginCANCEL,135,55,50,14
+    CONTROL         "",IDC_LABEL1,"{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",
+                    0x0,10,10,110,10
+    CONTROL         "",IDC_LABEL2,"{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",
+                    0x0,10,45,110,10
+    EDITTEXT        Drink_LoginUsername,10,20,115,15,ES_AUTOHSCROLL
+    EDITTEXT        Drink_LoginPassword,10,55,115,15,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Save Username and Password",Drink_LoginSave,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,80,110,10
+END
+
+Drink_Options_Dialog DIALOGEX 0, 0, 304, 252
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,190,10,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,35,50,14
+    EDITTEXT        Drink_OptionsDelay,190,205,105,15,ES_AUTOHSCROLL
+    CONTROL         "",Drink_OptionsLabel4,
+                    "{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",0x0,190,195,75,
+                    10
+    GROUPBOX        "Include these drinks in randomize",IDC_STATIC,5,5,175,
+                    215,0,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT
+    CONTROL         "Auto Open",Drink_OptionsOpen,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,190,65,50,10
+    CONTROL         "Auto Login",Drink_OptionsLogin,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,190,90,48,10
+    CONTROL         "Gamble on Random Drop",Drink_OptionsGamble,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,190,115,93,10
+    CONTROL         "Save Username and Password",Drink_OptionsSaveUser,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,190,140,110,10
+    EDITTEXT        Drink_OptionsServer,10,230,285,15,ES_AUTOHSCROLL
+    CONTROL         "",Drink_OptionsLabel5,
+                    "{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",0x0,10,220,75,
+                    10
+END
+
+Drink_DropDelay_Dialog DIALOG DISCARDABLE  0, 0, 189, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Drop",DelayDialog_Drop,130,7,50,14
+    PUSHBUTTON      "Cancel",Drink_DropCancel,130,24,50,14
+    EDITTEXT        Drink_DropDelay,10,20,115,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LABEL1,"{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",
+                    0x0,10,10,110,10
+END
+
+Drink_Open DIALOG DISCARDABLE  0, 0, 329, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Open",IDOK,270,20,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,270,40,50,14
+    CONTROL         "Tree1",Drink_OpenTree,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,20,250,150
+    LTEXT           "Drink Machines",IDC_STATIC,10,10,110,10
+    LTEXT           "Location",IDC_STATIC,10,175,50,10
+    LTEXT           "loc",IDC_STATIC,10,185,250,20,SS_SUNKEN | WS_BORDER
+    PUSHBUTTON      "Help",Drink_OpenHelp,270,60,50,14
+END
+
+Drink_LoginInvalid DIALOG DISCARDABLE  0, 0, 184, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,20,50,14
+    LTEXT           "Login Invalid!",IDC_STATIC,45,25,60,10
+END
+
+Drink_Drop_Failed DIALOG DISCARDABLE  0, 0, 139, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,15,50,14
+    LTEXT           "Drop Failed!",IDC_STATIC,20,15,45,10
+END
+
+Drink_Drop_Successful DIALOG DISCARDABLE  0, 0, 154, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,15,50,14
+    LTEXT           "Drop Successful.",IDC_STATIC,20,15,60,10
+END
+
+Drink_Drop_Abort DIALOG DISCARDABLE  0, 0, 139, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,15,50,14
+    LTEXT           "Drop Aborted!",IDC_STATIC,20,15,45,10
+END
+
+Drink_Server_Dialog DIALOG DISCARDABLE  0, 0, 249, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,190,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,25,50,14
+    EDITTEXT        Drink_ServerEdit,10,20,170,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LABEL1,"{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",
+                    0x0,10,10,110,10
+END
+
+Drink_Meta_FailedDialog DIALOG DISCARDABLE  0, 0, 154, 32
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,95,10,50,14
+    LTEXT           "No Meta Server Found!",IDC_STATIC,10,10,75,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "drink MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "drink\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "drink.EXE\0"
+            VALUE "ProductName", "drink Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    Drink_Login_Dialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    Drink_Options_Dialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    Drink_DropDelay_Dialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    Drink_Open, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    Drink_LoginInvalid, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    Drink_Drop_Failed, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    Drink_Drop_Successful, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    Drink_Drop_Abort, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    Drink_Server_Dialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    Drink_Meta_FailedDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 25
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+Drink_Login_Dialog DLGINIT
+BEGIN
+    IDC_LABEL1, 0x376, 56, 0
+0x0000, 0x0000, 0x0200, 0x0020, 0x002b, 0x0000, 0x0000, 0x0000, 0xc0c0, 
+0x00c0, 0x0008, 0x8000, 0x7355, 0x7265, 0x616e, 0x656d, 0x1231, 0x0000, 
+0x01a7, 0x0000, 0x0200, 0x000c, 0x0034, 0x0000, 0x009c, 0x0000, 0x0200, 
+0x0000, 
+    IDC_LABEL2, 0x376, 56, 0
+0x0000, 0x0000, 0x0200, 0x0020, 0x002b, 0x0000, 0x0000, 0x0000, 0xc0c0, 
+0x00c0, 0x0008, 0x8000, 0x6150, 0x7373, 0x6f77, 0x6472, 0x1231, 0x0000, 
+0x01a7, 0x0000, 0x0200, 0x000c, 0x0034, 0x0000, 0x009c, 0x0000, 0x0200, 
+0x0000, 
+    0
+END
+
+Drink_Options_Dialog DLGINIT
+BEGIN
+    Drink_OptionsLabel4, 0x376, 72, 0
+0x0000, 0x0000, 0x0200, 0x0030, 0x002b, 0x0000, 0x0000, 0x0000, 0xc0c0, 
+0x00c0, 0x0017, 0x8000, 0x6544, 0x6166, 0x6c75, 0x2074, 0x6544, 0x616c, 
+0x2079, 0x5328, 0x6365, 0x6e6f, 0x7364, 0x2e29, 0x0c67, 0x0000, 0x01a7, 
+0x0000, 0x0200, 0x000c, 0x0034, 0x0000, 0x009c, 0x0000, 0x0200, 0x0000, 
+
+    Drink_OptionsLabel5, 0x376, 72, 0
+0x0000, 0x0000, 0x0200, 0x002c, 0x002b, 0x0000, 0x0000, 0x0000, 0xc0c0, 
+0x00c0, 0x0012, 0x8000, 0x6544, 0x6166, 0x6c75, 0x2074, 0x654d, 0x6174, 
+0x6553, 0x7672, 0x7265, 0x0352, 0x0c67, 0x0000, 0x01a7, 0x0000, 0x0200, 
+0x000c, 0x0034, 0x0000, 0x009c, 0x0000, 0x0200, 0x0000, 0xe3f4, 0x0351, 
+
+    0
+END
+
+Drink_DropDelay_Dialog DLGINIT
+BEGIN
+    IDC_LABEL1, 0x376, 56, 0
+0x0000, 0x0000, 0x0200, 0x0020, 0x002b, 0x0000, 0x0000, 0x0000, 0xc0c0, 
+0x00c0, 0x0005, 0x8000, 0x6544, 0x616c, 0x0079, 0x0044, 0x1231, 0x0000, 
+0x01a7, 0x0000, 0x0200, 0x000c, 0x0034, 0x0000, 0x009c, 0x0000, 0x0200, 
+0x0000, 
+    0
+END
+
+Drink_Server_Dialog DLGINIT
+BEGIN
+    IDC_LABEL1, 0x376, 60, 0
+0x0000, 0x0000, 0x0200, 0x0024, 0x002b, 0x0000, 0x0000, 0x0000, 0xc0c0, 
+0x00c0, 0x000b, 0x8000, 0x654d, 0x6174, 0x532d, 0x7265, 0x6576, 0x0372, 
+0x1231, 0x0000, 0x01a7, 0x0000, 0x0200, 0x000c, 0x0034, 0x0000, 0x009c, 
+0x0000, 0x0200, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Drink"
+    IDR_DRINKTYPE           "\nDrink\nDrink\nDrink Files (*.dmd)\n.dmd\ndrink\nDrink Machine"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "drink"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing machine\nOpen"
+    ID_FILE_CLOSE           "Close the active machine\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the Application\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_LOGIN           "Log In to Selected Drink Machine"
+    ID_FILE_LOGOUT          "Log Out of Seclected Machine"
+    ID_FILE_LOGOUTALL       "Log Out of All Drink Machines"
+    Drink_Options           "Set options for current machine"
+    Drink_Close             "Close Current Drink Machine"
+    Drink_Login             "Log In to Selected Machine"
+    Drink_Logout            "Log out of selected drink machine"
+    Drink_Logout_All        "Log out of All drink machines"
+    Grey_Login              "Open a machine and log in\n"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\drink.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxolecl.rc"       // OLE container resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

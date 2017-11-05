@@ -1,0 +1,4 @@
+Device files for devdrink:
+Major 252 unbuffered character
+/dev/drink 	minor 0	  slot drop and empty readback
+/dev/drinkp 	minor 1	  Front panel buttons readback and indicator lights.
